@@ -7,6 +7,7 @@ all: $(BIN)
 
 $(BIN): $(OBJ)
 	$(CC) $(OBJ) -o $(BIN)
+	./$(BIN)
 
 clean:
 	$(RM) -rf $(BIN) $(OBJ)
