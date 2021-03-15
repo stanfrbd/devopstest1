@@ -31,4 +31,3 @@ jobs:
           echo "Running Makefile"
           make
           ./test
-          echo test, and deploy your project.
