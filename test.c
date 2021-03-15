@@ -7,5 +7,6 @@ int main(void)
     puts("New line");
     puts("Is my project running?");
     puts("Trying to push without tag");
+    puts("This time is will work with version-0.0");
     return 0;
 }
