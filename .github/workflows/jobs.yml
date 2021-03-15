@@ -26,11 +26,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run Makefile
-        run: make
-      - name: Copy binaries
-        run: |
-          mkdir bin
-          cp test bin
+        run: make && make clean
         
       
       
