@@ -4,5 +4,6 @@
 int main(void)
 {
     puts("Hello, world!");
+    puts("New line");
     return 0;
 }
