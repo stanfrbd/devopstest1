@@ -27,6 +27,10 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run Makefile
         run: make && make clean
+      - name: List files
+        run: ls
+      - name: Echo it works
+        run: echo "it works"
         
       
       
