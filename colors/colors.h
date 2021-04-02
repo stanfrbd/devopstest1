@@ -1,74 +1,40 @@
-#include "colors.h"
+#ifndef COLORS_H
+#define COLORS_H
 
 #include <stdio.h>
+#include <stdlib.h>
 
-void set_default()
-{
-    printf("\033[0m");
-}
+/*
+ *
+ * Black \033[0;30m
+ * Red \033[0;31m
+ * Green \033[0;32m
+ * Yellow \033[0;33m
+ * Blue \033[0;34m
+ * Purple \033[0;35m
+ * Cyan \033[0;36m
+ * White \033[0;37m
+ *
+ */
 
-void set_red(char *input)
-{
-    printf("\033[1;31m");
-    printf("%s", input);
-    set_default();
-}
+void set_default();
 
-void set_green(char *input)
-{
-    printf("\033[0;32m");
-    printf("%s", input);
-    set_default();
-}
+void set_red(char *input);
 
-void set_yellow(char *input)
-{
-    printf("\033[1;33m");
-    printf("%s", input);
-    set_default();
-}
+void set_green(char *input);
 
-void set_blue(char *input)
-{
-    printf("\033[0;34m");
-    printf("%s", input);
-    set_default();
-}
+void set_yellow(char *input);
 
-void set_purple(char *input)
-{
-    printf("\033[0;35m");
-    printf("%s", input);
-    set_default();
-}
+void set_blue(char *input);
 
-void set_cyan(char *input)
-{
-    printf("\033[36m");
-    printf("%s", input);
-    set_default();
-}
+void set_purple(char *input);
 
-void print_passed(char *input)
-{
-    printf("[");
-    set_green("PASSED");
-    printf("] ");
-    set_green(input);
-}
+void set_cyan(char *input);
 
-void print_failed(char *input)
-{
-    printf("[");
-    set_red("FAILED");
-    printf("] ");
-    set_red(input);
-}
+void print_passed(char *input);
 
-void print_info(char *input)
-{
-    printf("[ ");
-    set_yellow("INFO");
-    printf(" ] ");
-    set_yellow(input);
-}
+void print_failed(char *input);
+
+void print_info(char *input);
+
+#endif
