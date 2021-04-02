@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -std=c99 -Wall -Werror -Wextra -pedantic
-OBJ = test.o
+OBJ = test.o colors/colors.o
 BIN = test
 
 all: $(BIN)
